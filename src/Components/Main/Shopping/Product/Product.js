@@ -14,7 +14,7 @@ const Product = props => {
             <div className="product-info">
                 <h3 className="text-blue-600">{name}</h3>
                 <span>By: {seller}</span>
-                <div>
+                <div className="grid grid-cols-2">
                     <div>
                         <h2 className="text-yellow-500 font-semibold">${price}</h2>
                         <p>Only {stock} in Stock</p>
@@ -24,8 +24,17 @@ const Product = props => {
                         </button>
                     </div>
                     <div>
-                        <h2>Features</h2>
-                        ul
+                        <div className="flex">
+                            <i className="fas fa-star mr-1 text-yellow-400"></i>
+                            <i className="far fa-star mr-1 text-yellow-400"></i>
+                            <i className="far fa-star mr-1 text-yellow-400"></i>
+                        </div>
+                        <h2 className="text-2xl">Features</h2>
+                        <ul className="ml-4">
+                            <li className="list-disc ml-4">Lorem, ipsum dolor.</li>
+                            <li className="list-disc ml-4">Sunt, ipsum. Cumque!</li>
+                            <li className="list-disc ml-4">Aliquid, dolorum reprehenderit.</li>
+                        </ul>
                     </div>
                 </div>
             </div>

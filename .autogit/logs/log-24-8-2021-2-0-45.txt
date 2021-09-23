@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 24 2021 02:00:45 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/index.html
+* src/Components/Header/Header.js
+* src/Components/Header/header.css
+* src/Components/Main/Shopping/Product/Product.js
+* src/Components/Main/Shopping/Product/product.css
+* src/Components/Main/Shopping/Shopping.js
+* src/Components/Main/Shopping/shopping.css
+
+
+Created files:
+* src/utilitis/fakedb.js
+
+
+Deleted files:
+
+
+Renamed files:
