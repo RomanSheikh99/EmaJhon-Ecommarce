@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {addToDb} from '../../../utilitis/fakedb'
 import Cart from '../Cart/Cart';
 import Product from './Product/Product';
 import './shopping.css';
@@ -25,7 +26,8 @@ const Shopping = () => {
         <div>
             <div className="shearch-bar">
             <input type="text" placeholder="Type Hare to Search" />
-            <span className="icon"><FontAwesomeIcon icon={faShoppingCart} /></span>
+                <span className="icon"><FontAwesomeIcon icon={faShoppingCart} /></span>
+                <span className="ml-2 text-2xl text-yellow-500">{cart.length}</span>
         </div>
         <div className="shopping">
             <div className="empty-div"></div>

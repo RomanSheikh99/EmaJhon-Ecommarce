@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 24 2021 02:31:03 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* public/index.html
+* src/Components/Header/header.css
+* src/Components/Main/Shopping/Product/Product.js
+
+
+Created files:
+* .autogit/logs/log-24-8-2021-2-0-45.txt
+
+
+Deleted files:
+
+
+Renamed files:
