@@ -3,6 +3,7 @@ import Button from '../../../utilitis/Button/Button';
 import './cart.css';
 
 const Cart = props => {
+    const productId = props.product;
     const products = props.cart;
     const order = products.length;
     let price = 0;

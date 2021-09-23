@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import {addToDb} from '../../../utilitis/fakedb'
+import {addToDb, getStoredCart} from '../../../utilitis/fakedb'
 import Cart from '../Cart/Cart';
 import Product from './Product/Product';
 import './shopping.css';
@@ -14,8 +14,10 @@ const Shopping = () => {
     const addToCart = product => {
         const newCart = [...cart, product];
         setCart(newCart);
+        addToDb(product.key)
     }
 
+    const productId = getStoredCart();
 
     useEffect(() => {
         fetch('./products.json')
@@ -41,7 +43,7 @@ const Shopping = () => {
                 }
             </div>
             <div className="shopping-cart">
-                <Cart cart={cart}></Cart>
+                <Cart key={cart.key} product={productId} cart={cart}></Cart>
             </div>
         </div>
         </div>

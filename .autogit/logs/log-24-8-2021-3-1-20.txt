@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 24 2021 03:01:20 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* src/Components/Main/Shopping/Product/Product.js
+* src/Components/Main/Shopping/Shopping.js
+
+
+Created files:
+* .autogit/logs/log-24-8-2021-2-31-3.txt
+
+
+Deleted files:
+
+
+Renamed files:
