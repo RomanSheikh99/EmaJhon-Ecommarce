@@ -8,3 +8,19 @@
 .products-container{
     border-right: 1px solid #d3d3d3;
 }
+
+.shearch-bar{
+    background-color: #222222;
+    text-align: center;
+}
+.shearch-bar input{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.icon{
+    color: white;
+    margin-left: 10px;
+    font-size: 23px;
+}
