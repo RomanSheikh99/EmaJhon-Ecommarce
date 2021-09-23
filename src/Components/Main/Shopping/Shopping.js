@@ -17,7 +17,13 @@ const Shopping = () => {
         addToDb(product.key)
     }
 
-    const productId = getStoredCart();
+    useEffect(() => {
+        const productId = getStoredCart();
+        for (const id in productId) {
+            const newCart = products.find(product => product.key === id);
+            console.log(newCart)
+        }
+    },[cart])
 
     useEffect(() => {
         fetch('./products.json')
@@ -43,7 +49,7 @@ const Shopping = () => {
                 }
             </div>
             <div className="shopping-cart">
-                <Cart key={cart.key} product={productId} cart={cart}></Cart>
+                <Cart key={cart.key} cart={cart}></Cart>
             </div>
         </div>
         </div>

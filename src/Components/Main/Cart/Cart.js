@@ -3,17 +3,7 @@ import Button from '../../../utilitis/Button/Button';
 import './cart.css';
 
 const Cart = props => {
-    // const productId = props.product;
     const products = props.cart;
-    // const [products, setProducts] = useState([]);
-    // setProducts(allProducts);
-    console.log(products);
-    // useEffect(() => {
-    //     for (const id in productId) {
-    //         const cartProducts = allProducts.find(product => product.key === id);
-    //         setProducts(cartProducts);
-    //     }
-    // },[products])
     const order = products.length;
     let price = 0;
     products.forEach(product => {
