@@ -1,0 +1,50 @@
+.logo{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo img{
+    width: 300px;
+}
+
+nav.navbar {
+    background: #000;
+}
+
+ul {
+    width: 92%;
+    margin: auto;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 10px;
+}
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+.shearch-bar{
+    background-color: #222222;
+    text-align: center;
+}
+.shearch-bar input{
+    width: 70%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.icon{
+    color: white;
+    margin-left: 10px;
+    font-size: 23px;
+}

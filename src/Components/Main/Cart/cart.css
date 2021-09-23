@@ -1,0 +1,16 @@
+.cart{
+    text-align: center;
+}
+
+.cart h3{
+    margin-bottom: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.flex-container h4{
+    color: red;
+}
