@@ -8,7 +8,6 @@ import './shopping.css';
 
 const Shopping = () => {
     const [products, setProducts] = useState([]);
-
     const [cart, setCart] = useState([]);
 
     const addToCart = product => {
@@ -17,13 +16,27 @@ const Shopping = () => {
         addToDb(product.key)
     }
 
+    const searchProduct = event => {
+        const getInputValue = event.target.value;
+        const getProduct = products.filter(product => product.name.include(getInputValue));
+        console.log(getProduct);
+    }
+
     useEffect(() => {
         const productId = getStoredCart();
-        for (const id in productId) {
-            const newCart = products.find(product => product.key === id);
-            console.log(newCart)
+        if (products.length) {
+            const addedProduct = [];
+            for (const id in productId) {
+                const newCart = products.find(product => product.key === id);
+                if (newCart) {
+                    const item = productId[id];
+                    newCart.items = item;
+                    addedProduct.push(newCart);
+                }
+            }
+            setCart(addedProduct);
         }
-    },[cart])
+    },[products])
 
     useEffect(() => {
         fetch('./products.json')
@@ -33,7 +46,7 @@ const Shopping = () => {
     return (
         <div>
             <div className="shearch-bar">
-            <input type="text" placeholder="Type Hare to Search" />
+            <input onChange={searchProduct} type="text" placeholder="Type Hare to Search" />
                 <span className="icon"><FontAwesomeIcon icon={faShoppingCart} /></span>
                 <span className="ml-2 text-2xl text-yellow-500">{cart.length}</span>
         </div>

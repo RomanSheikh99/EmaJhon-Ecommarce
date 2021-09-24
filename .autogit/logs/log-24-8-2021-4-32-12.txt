@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 24 2021 04:32:12 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/Components/Main/Cart/Cart.js
+* src/Components/Main/Shopping/Shopping.js
+
+
+Created files:
+* .autogit/logs/log-24-8-2021-4-1-54.txt
+
+
+Deleted files:
+
+
+Renamed files:

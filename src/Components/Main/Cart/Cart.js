@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react';
 import Button from '../../../utilitis/Button/Button';
 import './cart.css';
 
 const Cart = props => {
     const products = props.cart;
-    const order = products.length;
     let price = 0;
+    let item = 0;
     products.forEach(product => {
-        price = price + product.price;
+        if (!product.items) {
+            product.items = 1;
+        }
+        price = price + (product.price * product.items);
+        item = item + product.items;
     })
     const cost = (price / 100) * 3.6;
     const totatBeforTax = price + cost;
@@ -16,7 +19,7 @@ const Cart = props => {
     return (
         <div className="cart">
             <h3>Order Summary</h3>
-            <h5>Items ordered: {order}</h5>
+            <h5>Items ordered: {item}</h5>
             <div className="flex-container"><span>Items:</span><span>$ {price.toFixed(2)}</span></div>
             <div className="flex-container"><span>Shipping & Handling:</span><span>$ {cost.toFixed(2)}</span></div>
             <div className="flex-container"><span>Total before tax:</span><span>$ {totatBeforTax.toFixed(2)}</span></div>
