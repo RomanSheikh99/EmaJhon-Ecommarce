@@ -9,6 +9,7 @@ import './shopping.css';
 const Shopping = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [displayProduct, setDisplayProduct] = useState([]);
 
     const addToCart = product => {
         const newCart = [...cart, product];
@@ -18,8 +19,8 @@ const Shopping = () => {
 
     const searchProduct = event => {
         const getInputValue = event.target.value;
-        const getProduct = products.filter(product => product.name.include(getInputValue));
-        console.log(getProduct);
+        const getProduct = products.filter(product => product.name.toLowerCase().includes(getInputValue.toLowerCase()));
+        setDisplayProduct(getProduct);
     }
 
     useEffect(() => {
@@ -41,30 +42,43 @@ const Shopping = () => {
     useEffect(() => {
         fetch('./products.json')
         .then(res => res.json())
-        .then(data => setProducts(data))
+            .then(data => {
+                setProducts(data)
+                setDisplayProduct(data)
+            })
     }, []);
+
+
+    let totalProduct = 0;
+    cart.forEach(product => {
+        if (!product.items) {
+            product.items = 1;
+        }
+        totalProduct = totalProduct + product.items;
+    })
+
     return (
         <div>
             <div className="shearch-bar">
-            <input onChange={searchProduct} type="text" placeholder="Type Hare to Search" />
+                <input onChange={searchProduct} type="text" placeholder="Type Hare to Search" />
                 <span className="icon"><FontAwesomeIcon icon={faShoppingCart} /></span>
-                <span className="ml-2 text-2xl text-yellow-500">{cart.length}</span>
-        </div>
-        <div className="shopping">
-            <div className="empty-div"></div>
-            <div className="products-container">
+                <span className="ml-2 text-2xl text-yellow-500">{totalProduct}</span>
+            </div>
+            <div className="shopping">
+                <div className="empty-div"></div>
+                <div className="products-container">
                 {
-                    products.map(product => <Product
+                    displayProduct.map(product => <Product
                         cart={addToCart}
                         key={product.key}
                         product={product}>
                     </Product>)
                 }
+                </div>
+                <div className="shopping-cart">
+                    <Cart key={cart.key} cart={cart}></Cart>
+                </div>
             </div>
-            <div className="shopping-cart">
-                <Cart key={cart.key} cart={cart}></Cart>
-            </div>
-        </div>
         </div>
     );
 };
