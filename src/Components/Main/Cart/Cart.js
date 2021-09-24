@@ -20,7 +20,7 @@ const Cart = props => {
 
     const clearCart = () => {
         clearTheCart();
-        location.reload();
+        window.location.reload();
     }
     return (
         <div className="cart">

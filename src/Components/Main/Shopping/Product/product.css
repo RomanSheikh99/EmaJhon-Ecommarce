@@ -1,5 +1,6 @@
 .product{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     padding: 10px;
     border-bottom: 1px solid #d3d3d3;
 }
@@ -9,9 +10,6 @@
     line-height: 1.6;
 }
 
-.product-name{
-    
-}
 
 .btn{
     background-color: #f0c14b;
