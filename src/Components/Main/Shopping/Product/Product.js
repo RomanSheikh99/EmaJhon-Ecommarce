@@ -30,22 +30,10 @@ const Product = props => {
                             fullSymbol="fas fa-star mr-1 text-yellow-400"
                             readonly>
                         </Rating>
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Features
-                                </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body">
-                                    <ul className="ml-4">
-                                        {features.map(feature => <Li feature={feature.value}></Li>)}
-                                    </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h2 className="text-2xl">Features</h2>
+                        <ul className="ml-4">
+                            {features.map(feature => <Li feature={feature.value}></Li>)}
+                        </ul>
                     </div>
                 </div>
             </div>
