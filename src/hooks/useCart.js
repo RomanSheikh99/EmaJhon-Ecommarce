@@ -10,8 +10,8 @@ const useCart = products => {
             for (const key in saveCart) {
                 const addedProduct = products.find(product => product.key === key);
                 if (addedProduct) {
-                    const quantity = saveCart[key];
-                    addedProduct.quantity = quantity;
+                    const items = saveCart[key];
+                    addedProduct.items = items;
                     storeCart.push(addedProduct);
                 };
             }
@@ -19,7 +19,7 @@ const useCart = products => {
         }
     }, [products])
     
-    return [cart];
+    return [cart,setCart];
 }
 
 export default useCart;
