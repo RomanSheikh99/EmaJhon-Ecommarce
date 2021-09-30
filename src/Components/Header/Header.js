@@ -13,8 +13,8 @@ const Header = () => {
             <nav className="navbar">
                 <ul>
                     <li><a href="/shop">Shop</a></li>
-                    <li><a href="/order">Order Review</a></li>
-                    <li><a href="/manage">Manage Inventory here</a></li>
+                    <li><a href="/orders">Order Review</a></li>
+                    <li><a href="/inventory">Manage Inventory</a></li>
                 </ul>
             </nav>
         </div>
