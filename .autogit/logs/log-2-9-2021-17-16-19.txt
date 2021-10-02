@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Sat Oct 02 2021 17:16:19 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/Components/Main/Cart/Cart.js
+* src/Components/Orders/Orders.js
+
+
+Created files:
+* .autogit/logs/log-2-9-2021-16-17-56.txt
+
+
+Deleted files:
+
+
+Renamed files:
