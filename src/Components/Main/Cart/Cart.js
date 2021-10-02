@@ -1,9 +1,6 @@
-import Button from '../../../utilitis/Button/Button';
-import { clearTheCart } from '../../../utilitis/fakedb';
 import './cart.css';
 
 const Cart = props => {
-    console.log(props);
     const products = props.cart;
     let price = 0;
     let item = 0;

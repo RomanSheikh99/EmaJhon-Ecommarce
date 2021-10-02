@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
-import { removeFromDb } from '../../utilitis/fakedb';
+import { clearTheCart, removeFromDb } from '../../utilitis/fakedb';
 import Cart from '../Main/Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
 
@@ -18,7 +18,7 @@ const Orders = () => {
 
     const clearItems = () => {
         setCart([]);
-        
+        clearTheCart();
     }
     return (
         <div className="shopping">

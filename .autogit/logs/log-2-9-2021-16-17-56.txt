@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Sat Oct 02 2021 16:17:56 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/App.js
+* src/Components/Header/Header.js
+* src/Components/Main/Cart/Cart.js
+* src/Components/Main/Shopping/Shopping.js
+* src/Components/Orders/Orders.js
+
+
+Created files:
+* src/Components/PlaceOrder/PlaceOrder.js
+* src/images/giphy.gif
+
+
+Deleted files:
+
+
+Renamed files:
