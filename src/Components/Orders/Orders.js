@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useCart from '../../hooks/useCart';
 import useProducts from '../../hooks/useProducts';
 import { removeFromDb } from '../../utilitis/fakedb';
@@ -14,6 +15,11 @@ const Orders = () => {
         setCart(newCart);
         removeFromDb(key);
     }
+
+    const clearItems = () => {
+        setCart([]);
+        
+    }
     return (
         <div className="shopping">
                 <div className="empty-div"></div>
@@ -27,7 +33,11 @@ const Orders = () => {
                 }
                 </div>
                 <div className="shopping-cart">
-                    <Cart key={cart.key} cart={cart}></Cart>
+                <Cart key={cart.key} cart={cart}>
+                    <Link to="/placeorder">
+                        <button onClick={clearItems} className='btn'>Place Orders</button>
+                    </Link>
+                </Cart>
                 </div>
             </div>
     );
