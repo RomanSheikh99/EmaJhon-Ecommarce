@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Mon Oct 11 2021 01:10:16 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+
+
+Created files:
+* .autogit/logs/log-11-9-2021-0-39-58.txt
+* src/firebase/firebase.config.js
+* src/firebase/firebase.init.js
+
+
+Deleted files:
+
+
+Renamed files:
