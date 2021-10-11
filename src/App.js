@@ -6,6 +6,7 @@ import Main from "./Components/Main/Main";
 import NotFound from "./Components/NotFound/NotFound";
 import Orders from "./Components/Orders/Orders";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
+import Register from "./Components/Register/Register";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/placeorder">
             <PlaceOrder></PlaceOrder>
+          </Route>
+          <Route exact path="/register">
+            <Register></Register>
           </Route>
           <Route path="*">
             <NotFound></NotFound>
