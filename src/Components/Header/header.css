@@ -9,6 +9,9 @@
 
 nav.navbar {
     background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
 nav.navbar ul {
@@ -31,4 +34,14 @@ nav.navbar a {
 nav.navbar a:hover{
     background-color: white;
     color: black;
+}
+
+.auth-bar{
+    display: flex;
+    align-items: center;
+}
+
+span{
+    color: white;
+    margin: 0 5px;
 }

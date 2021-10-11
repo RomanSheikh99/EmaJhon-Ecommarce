@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGoogle } from '@fortawesome/free-solid-svg-icons'
+import { faRecycle } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
+import './register.css';
 
 const Register = () => {
     return (
-        <div>
+        <div className='register'>
             <h2>Resigter Now</h2>
             <form>
                 <input type="text" placeholder="Your Full Name" />
@@ -17,7 +18,7 @@ const Register = () => {
             <p>Allready Have An Account? <Link to="/logIn">Login In</Link></p>
             <p>----------Or----------</p>
             <div>
-                <FontAwesomeIcon icon={faGoogle} />
+                <FontAwesomeIcon icon={faRecycle} />
             </div>
         </div>
     );

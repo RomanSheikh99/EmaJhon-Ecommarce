@@ -17,8 +17,10 @@ const Header = () => {
                     <li><NavLink to="/orders">Order Review</NavLink></li>
                     <li><NavLink to="/inventory">Manage Inventory</NavLink></li>
                 </ul>
-                <div>
+                <div className="auth-bar">
                     <NavLink to="/logIn">Login</NavLink>
+                    <span>/</span>
+                    <NavLink to="/register">Register</NavLink>
                 </div>
             </nav>
         </div>
