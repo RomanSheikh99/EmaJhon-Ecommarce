@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Tue Oct 12 2021 22:35:00 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-12-9-2021-22-4-44.txt
+
+
+Deleted files:
+
+
+Renamed files:
