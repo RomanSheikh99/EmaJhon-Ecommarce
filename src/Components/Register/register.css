@@ -12,3 +12,22 @@
     width: 60%;
     padding: 5px;
 }
+.iconBtn-container{
+    width: 60%;
+    margin: 10px auto;
+}
+.iconBtn{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.iconBtn img{
+    width: 90%;
+}
