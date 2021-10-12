@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter,Switch,Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Inventory from "./Components/Inventory/Inventory";
+import Login from "./Components/Login/Login";
 import Main from "./Components/Main/Main";
 import NotFound from "./Components/NotFound/NotFound";
 import Orders from "./Components/Orders/Orders";
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route exact path="/register">
             <Register></Register>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

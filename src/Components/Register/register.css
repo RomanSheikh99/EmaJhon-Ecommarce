@@ -13,6 +13,9 @@
     padding: 5px;
 }
 .iconBtn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60%;
     margin: 10px auto;
 }
@@ -30,4 +33,8 @@
 
 .iconBtn img{
     width: 90%;
+}
+
+.logOut-section{
+    
 }
