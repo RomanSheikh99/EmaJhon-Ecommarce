@@ -8,7 +8,7 @@ import gitIcon from '../../images/github.png'
 import useFirebase from '../../hooks/useFirebase';
 
 const Register = () => {
-    const { signInWithGoogle, user } = useFirebase();
+    const { signInWithGoogle,signInWithFacebook, user } = useFirebase();
     console.log(user);
     return (
         <div className='register'>
@@ -26,7 +26,7 @@ const Register = () => {
                 <button onClick={signInWithGoogle} className="iconBtn">
                     <img src={googleIcon} alt="" />
                 </button>
-                <button onClick={signInWithGoogle} className="iconBtn">
+                <button onClick={signInWithFacebook} className="iconBtn">
                     <img src={fbIcon} alt="" />
                 </button>
                 <button onClick={signInWithGoogle} className="iconBtn">

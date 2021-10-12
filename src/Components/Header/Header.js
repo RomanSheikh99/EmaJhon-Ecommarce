@@ -1,13 +1,18 @@
 import React from 'react';
 import './header.css';
 import logo from '../../images/logo.png';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useHistory} from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 
 
 
 const Header = () => {
-    const {user, logOut} = useFirebase();
+    const { user, logOut } = useFirebase();
+    const history = useHistory();
+    const logOutFromThePage = () => {
+        logOut();
+        history.push("/");
+    }
     return (
         <div>
             <div className="logo">
@@ -21,7 +26,7 @@ const Header = () => {
                 </ul>
                 <div className="auth-bar">
                     {user.photoURL ?<div className="logOut-section">
-                        <button className='logout-btn' onClick={logOut}>Log Out</button>
+                        <button className='logout-btn' onClick={logOutFromThePage}>Log Out</button>
                         <Link to="/profile">
                             <img className="profile-link" src={user.photoURL} alt="" />
                         </Link>

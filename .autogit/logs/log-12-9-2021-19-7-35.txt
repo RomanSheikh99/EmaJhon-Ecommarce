@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Tue Oct 12 2021 19:07:35 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/App.js
+* src/Components/Header/Header.js
+* src/Components/Header/header.css
+
+
+Created files:
+* .autogit/logs/log-12-9-2021-18-37-16.txt
+* src/Components/Profile/Profile.js
+* src/Components/Profile/profile.css
+
+
+Deleted files:
+
+
+Renamed files:
