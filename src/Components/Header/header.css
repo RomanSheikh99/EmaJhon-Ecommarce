@@ -41,7 +41,7 @@ nav.navbar a:hover{
     align-items: center;
 }
 
-span{
+.auth-bar span{
     color: white;
     margin: 0 5px;
 }

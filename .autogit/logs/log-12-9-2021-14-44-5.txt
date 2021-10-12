@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Oct 12 2021 14:44:05 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/Components/Main/Shopping/shopping.css
+* src/Components/Register/Register.js
+* src/Components/Register/register.css
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
