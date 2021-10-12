@@ -7,6 +7,7 @@ import Main from "./Components/Main/Main";
 import NotFound from "./Components/NotFound/NotFound";
 import Orders from "./Components/Orders/Orders";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
+import Profile from "./Components/Profile/Profile";
 import Register from "./Components/Register/Register";
 
 function App() {
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login></Login>
+          </Route>
+          <Route exact path="/profile">
+            <Profile></Profile>
           </Route>
           <Route path="*">
             <NotFound></NotFound>

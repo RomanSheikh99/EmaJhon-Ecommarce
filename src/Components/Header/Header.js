@@ -15,15 +15,15 @@ const Header = () => {
             </div>
             <nav className="navbar">
                 <ul>
-                    <li><NavLink to="/shop">Shop</NavLink></li>
-                    <li><NavLink to="/orders">Order Review</NavLink></li>
-                    <li><NavLink to="/inventory">Manage Inventory</NavLink></li>
+                    <li className="hover-effect"><NavLink to="/shop">Shop</NavLink></li>
+                    <li className="hover-effect"><NavLink to="/orders">Order Review</NavLink></li>
+                    <li className="hover-effect"><NavLink to="/inventory">Manage Inventory</NavLink></li>
                 </ul>
                 <div className="auth-bar">
                     {user.photoURL ?<div className="logOut-section">
-                        <button onClick={logOut}>Log Out</button>
+                        <button className='logout-btn' onClick={logOut}>Log Out</button>
                         <Link to="/profile">
-                            <img src={user.photoURL} alt="" />
+                            <img className="profile-link" src={user.photoURL} alt="" />
                         </Link>
                     </div>:
                     <div>

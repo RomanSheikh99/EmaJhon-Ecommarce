@@ -29,9 +29,11 @@ nav.navbar a {
     font-weight: 600;
     padding: 10px 10px;
 }
-nav.navbar a:hover{
+.hover-effect a:hover,.logout-btn:hover{
     background-color: white;
     color: black;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .auth-bar{
@@ -60,4 +62,8 @@ nav.navbar a:hover{
     border-radius: 50%;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.logOut-section img:hover{
+    transform: scale(1.1);
 }
