@@ -1,4 +1,4 @@
-import {getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged  } from "firebase/auth";
+import {getAuth, signInWithPopup, GoogleAuthProvider,onAuthStateChanged, signOut  } from "firebase/auth";
 import { useEffect } from "react";
 import { useState } from "react";
 import initFirebase from "../firebase/firebase.init";
@@ -22,6 +22,13 @@ const useFirebase = () => {
             });
     }
 
+    const logOut = () => {
+        signOut(auth)
+            .then(() => {
+                alert('Succesfully LogOut')
+                setUser({})
+            });
+    }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
@@ -33,7 +40,8 @@ const useFirebase = () => {
     return {
         user,
         error,
-        signInWithGoogle
+        signInWithGoogle,
+        logOut
     }
 }
 

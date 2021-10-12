@@ -1,13 +1,13 @@
 import React from 'react';
 import './header.css';
 import logo from '../../images/logo.png';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 
 
 
 const Header = () => {
-    const {user} = useFirebase();
+    const {user, logOut} = useFirebase();
     return (
         <div>
             <div className="logo">
@@ -21,8 +21,10 @@ const Header = () => {
                 </ul>
                 <div className="auth-bar">
                     {user.photoURL ?<div className="logOut-section">
-                        <button>Log Out</button>
-                        <img src={user.photoURL} alt="" />
+                        <button onClick={logOut}>Log Out</button>
+                        <Link to="/profile">
+                            <img src={user.photoURL} alt="" />
+                        </Link>
                     </div>:
                     <div>
                     <NavLink to="/logIn">Login</NavLink>
