@@ -6,4 +6,9 @@
 
 .register input{
     display: block;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 60%;
+    padding: 5px;
 }
