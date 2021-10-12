@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './register.css';
 import googleIcon from '../../images/google.png'
+import fbIcon from '../../images/facebook.png'
+import twiIcon from '../../images/twitter.png'
+import gitIcon from '../../images/'
 import useFirebase from '../../hooks/useFirebase';
 
 const Register = () => {

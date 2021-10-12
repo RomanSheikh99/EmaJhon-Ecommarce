@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Oct 12 2021 15:44:30 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/Components/Register/Register.js
+* src/Components/Register/register.css
+
+
+Created files:
+* .autogit/logs/log-12-9-2021-15-14-13.txt
+* src/images/google.png
+
+
+Deleted files:
+
+
+Renamed files:
