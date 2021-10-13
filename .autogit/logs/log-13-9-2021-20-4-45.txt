@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 13 2021 20:04:45 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/Components/PrivateRoute/PrivateRoute.js
+
+
+Created files:
+* .autogit/logs/log-13-9-2021-19-34-28.txt
+
+
+Deleted files:
+
+
+Renamed files:
