@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Wed Oct 13 2021 10:12:43 GMT+0600 (Bangladesh Standard Time)
+------------------------------------------------------
+
+Modified files:
+* src/App.js
+
+
+Created files:
+* .autogit/logs/log-13-9-2021-2-46-56.txt
+* src/context/authProvider.js
+* src/hooks/useAuth.js
+
+
+Deleted files:
+
+
+Renamed files:
