@@ -8,6 +8,7 @@ initFirebase()
 const useFirebase = () => {
     const [user, setUser] = useState({});
     const [error, setError] = useState({});
+    const [loading, setLoading] = useState(true);
 
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
@@ -20,6 +21,9 @@ const useFirebase = () => {
             })
             .catch(error => {
                 setError(error.message)
+            })
+            .finally(() => {
+                setLoading(false)
             });
     }
 
@@ -38,6 +42,9 @@ const useFirebase = () => {
             .then(() => {
                 alert('Succesfully LogOut')
                 setUser({})
+            })
+            .finally(() => {
+                setLoading(false)
             });
     }
     useEffect(() => {
@@ -45,10 +52,15 @@ const useFirebase = () => {
             if (user) {
                 setUser(user);
             }
+            else {
+                setUser({})
+            }
+            setLoading(false)
           });
     }, [])
     
     return {
+        loading,
         user,
         error,
         signInWithGoogle,

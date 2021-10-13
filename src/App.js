@@ -7,6 +7,7 @@ import Main from "./Components/Main/Main";
 import NotFound from "./Components/NotFound/NotFound";
 import Orders from "./Components/Orders/Orders";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
+import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Profile from "./Components/Profile/Profile";
 import Register from "./Components/Register/Register";
 import AuthProvider from "./context/authProvider";
@@ -30,9 +31,9 @@ function App() {
           <Route exact path="/inventory">
             <Inventory></Inventory>
           </Route>
-          <Route exact path="/placeorder">
+          <PrivateRoute exact path="/placeorder">
             <PlaceOrder></PlaceOrder>
-          </Route>
+          </PrivateRoute>
           <Route exact path="/register">
             <Register></Register>
           </Route>
