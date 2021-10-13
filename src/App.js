@@ -9,10 +9,12 @@ import Orders from "./Components/Orders/Orders";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import Profile from "./Components/Profile/Profile";
 import Register from "./Components/Register/Register";
+import AuthProvider from "./context/authProvider";
 
 function App() {
   return (
     <div>
+      <AuthProvider>
       <BrowserRouter>
       <Header></Header>
         <Switch>
@@ -45,6 +47,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
+      </AuthProvider>
       
     </div>
   );
